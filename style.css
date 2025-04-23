@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /* Layout */
+  .container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  header {
+    background: #f5f1f1;
+    text-align: center;
+    padding: 60px 0 20px;
+    border-bottom: 1px solid #faf8f8;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+  }
+  nav ul {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+  }
+  nav a {
+    text-decoration: none;
+    color: #0a84ca;
+    font-weight: 500;
+  }
+  section {
+    
+    padding: 60px 0;
+  }
+  .project {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #333;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+    margin-top: 40px;
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .delay-1 { transition-delay: 0.2s; }
+  .delay-2 { transition-delay: 0.4s; }
+  .delay-3 { transition-delay: 0.6s; }
+  .delay-4 { transition-delay: 0.8s; }
+  :root
+  :root {
+    --bg-color: #0979e9;
+    --text-color: #222;
+    --accent-color: #333;
+    --card-bg: #fff; 
+  }
+  
+  body.dark {
+    --bg-color: #1e1e1e;
+    --text-color: #eee;
+    --accent-color: #fff;
+    --card-bg: #2c2c2c;
+  }
+  
+  /* Apply the variables */
+  body {
+    body {
+        background: linear-gradient(to right, #223649, #1c3855);
+        color: var(--text-color);
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+      
+      body.dark {
+        background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+      }
+      
+  header, .project {
+    background: var(--card-bg);
+  }
+  nav a, .btn {
+    color: var(--accent-color);
+  }
+  /* Profile Picture Container */
+.profile-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .profile-pic {
+    width: 200px; /* Adjust the size */
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #863b3b; /* White border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 20px rgba(192, 178, 178, 0.15); /* More intense shadow */
+  }
+  
+  /* Add some text styling */
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Fade-in Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
